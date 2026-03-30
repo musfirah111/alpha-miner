@@ -1,0 +1,33 @@
+**Actual Traces**
+
+['A', 'B', 'C', 'D', 'E']
+['A', 'B', 'C', 'F', 'E']
+['A', 'B', 'C', 'D', 'E']
+['A', 'B', 'X', 'C', 'D', 'E']
+['A', 'B', 'C', 'D', 'E']
+['A', 'B', 'C', 'F', 'E']
+['A', 'B', 'C', 'D', 'E']
+['A', 'B', 'C', 'D', 'E', 'Y']
+['A', 'B', 'C', 'D']
+['A', 'B', 'C', 'F', 'E']
+
+
+**Test Traces**
+
+['A', 'B', 'C', 'D', 'E']
+['A', 'B', 'C', 'F', 'E']
+['A', 'B', 'C', 'D']
+['A', 'B', 'F', 'E']
+['A', 'B', 'C', 'D', 'E']
+
+
+**Process Steps**
+
+A: Customer submits ticket
+B: Support team reviews ticket
+C: Issue resolution begins
+D: Ticket resolved, closed
+E: Customer feedback received
+F: Ticket sent to another team
+
+**Note:**  The noise events ('X', 'Y') and uncommon paths (F) and missing events are sparsely represented due to the low probabilities and the small number of traces.  To see a higher incidence of these, a larger number of traces would be needed.  The test traces are designed to be similar in structure to the actual traces, reflecting the likely variations in process execution.  True randomness would require a much larger dataset.
