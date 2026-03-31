@@ -7,8 +7,7 @@ import alpha_algorithm_petri_net
 import os
 API_KEY = os.getenv("API_KEY")
 
-# Noor' API key:
-# os.environ['API_KEY'] = 'AIzaSyDoWYB677EqkwGir6SWIUNb3O0JZHxA_rA'
+
 
 # Retrieve the API key from the environment variable
 api_key = os.getenv('API_KEY')  # Retrieve the value of 'API_KEY'
