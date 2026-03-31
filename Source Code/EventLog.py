@@ -4,7 +4,8 @@ import google.generativeai as genai
 import alpha_algorithm_petri_net
 
 # Correctly set the API key in the environment variable
-os.environ['API_KEY'] = 'AIzaSyDoWYB677EqkwGir6SWIUNb3O0JZHxA_rA'
+import os
+API_KEY = os.getenv("API_KEY")
 
 # Noor' API key:
 # os.environ['API_KEY'] = 'AIzaSyDoWYB677EqkwGir6SWIUNb3O0JZHxA_rA'
